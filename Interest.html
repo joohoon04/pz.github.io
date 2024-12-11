@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest</title>
+    <link rel="stylesheet" href="Interest1.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="./img/logo.png"></div></a>
+        <nav>
+            <ul class="nav">
+                <li><a href="Growth_2.html">Growth</a></li>
+                <li><a href="Food1.html">Food </a></li>
+                <li><a href="Interest.html">Interest</a></li>
+                <li><a href="Travel.html">Travel</a></li>
+                <li><a href="Hobby.html">Hobby</a></li>
+                <li><a href="People.html">People</a></li>
+                <li><a href="Affected.html">Affected</a></li>
+                <li><a href="Special1.html">Special Day</a></li>
+                <li><a href="Future.html">Future Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="top">
+        <img src="./img/icon.png" alt="icon">
+        <p class="top_p">
+            안녕하세요 요즘 저의 관심사 입니다.
+        </p>
+    </div>
+
+    <div class="interest">
+        <div class="content">
+            <div class="main">
+                <div class="box_1"onclick="showPopup('./img/image 600.png', '저의 첫번째 관심사는 취업에 관련해 관심사가 생겼습니다. 제가 더 좋아하는 것이 무엇인지, 생각하고 잘하는 것과 하고싶은 것들을 생각하며 취업에 대해 더 접근하고 있습니다.')">
+                    <img src="./img/image 600.png" alt="">
+                </div>
+                <div class="box_2"onclick="showPopup('./img/image 601.png', '제가 두번째로 관심있는 것은 노래입니다. 이 노래를 부른 밴드의 노래가 좋아서 매번 찾아서 듣고 과제를 하며 더 다양한 밴드들의 노래들이 좋아졌습니다.')">
+                    <img src="./img/image 601.png" alt="lucy">
+                </div>
+                <div class="box_3" onclick="showPopup('./img/image 624.png', '마지막 세번째로 관심이 있는 것은 휴대폰으로 할 수 있는 피그민이라는 게임입니다. 걸어다니면서 피그민이라는 아이들을 키우는 것인데 하다보니까 재미도 있고해서 열심히 하고 있습니다.')">
+                    <img src="./img/image 624.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="highlight"></div>
+
+    <div class="popup_wrap" id="popup" style="display: none;">
+        <div class="popup_inner">
+            <img src="" alt="" id="popupImage">
+            <p id="popupDescription"></p>
+            <button class="btn_close" onclick="closePopup()">닫기</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_text">
+            <ul>
+                <li><a href="mailto:jju31142@gmail.com">E-mail : jju31142@gmail.com</a></li>
+                <li>Instagram : <a href="https://www.instagram.com/">hoon.04o</a></li>
+                <li>계원예술대학교 : 22361106</li>
+            </ul>
+            <div class="esc"> 
+                KAYWON UNIVERSITY DIGITAL MEDIA DESIGN JOOJAEHOON
+                copyrtghtⓒJOOJAEHOON All RIGHT RESERVED
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Interest.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="Travel.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="./img/logo.png"></div></a>
+        <nav>
+            <ul class="nav">
+                <li><a href="Growth_2.html">Growth</a></li>
+                <li><a href="Food1.html">Food </a></li>
+                <li><a href="Interest.html">Interest</a></li>
+                <li><a href="Travel.html">Travel</a></li>
+                <li><a href="Hobby.html">Hobby</a></li>
+                <li><a href="People.html">School</a></li>
+                <li><a href="Affected.html">Affected</a></li>
+                <li><a href="Special1.html">Special Day</a></li>
+                <li><a href="Future.html">Future Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main_text">
+        <img src="./img/Travel.png" alt="여행">
+        <p class="text">
+            제가 21년동안 여행한 곳을 설명하겠습니다~!
+        </p>
+    </div>
+    <div class="gallery">
+        <div class="gallery-item"onclick="showPopup('img/Travel1.jpg', '서해를 놀러갔을 때 아침부터 비가 왔지만 무지개가 나와서 찍은 사진입니다.', 'popup_pink')">
+            <img src="./img/Travel1.jpg" alt="">
+        </div>
+        <div class="gallery-item" onclick="showPopup('img/Travel2.jpg', '고등학교 때 친구의 펜션을 놀러 갔다가 노을이 예뻐 찍은 사진입니다.', 'popup_blue')">
+            <img src="img/Travel2.jpg" alt="이미지 2">
+        </div>
+        <div class="gallery-item" onclick="showPopup('img/Travel3.jpg', '전주의 살고 있는 대학교 동기와 놀러고 전주가는 티켓을 사 버스에서 찍은 사진입니다.', 'popup_red')">
+            <img src="img/Travel3.jpg" alt="이미지 3">
+        </div>
+    </div>
+
+    <div class="popup_wrap" id="popup" style="display: none;">
+        <div class="popup_inner">
+            <img src="" alt="" id="popupImage">
+            <p id="popupDescription"></p>
+            <button class="btn_close" onclick="closePopup()">닫기</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_text">
+            <ul>
+                <li><a href="mailto:jju31142@gmail.com">E-mail : jju31142@gmail.com</a></li>
+                <li>Instagram : <a href="https://www.instagram.com/">hoon.04o</a></li>
+                <li>계원예술대학교 : 22361106</li>
+            </ul>
+            <div class="esc"> 
+                KAYWON UNIVERSITY DIGITAL MEDIA DESIGN JOOJAEHOON
+                copyrtghtⓒJOOJAEHOON All RIGHT RESERVED
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="caption" id="modalCaption"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="Travel.js"></script>
+</body>
+</html>

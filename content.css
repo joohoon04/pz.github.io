@@ -1,0 +1,108 @@
+/* content */
+.content{
+    position: relative;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    span {
+        position: relative;
+    }
+        
+    &::before {
+        --size: 0;
+        content: '';
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        width: var(--size);
+        height: var(--size);
+        background: radial-gradient(circle closest-side, #0A84FF, transparent);
+        transform: translate(-50%, -50%);
+        transition: all .2s ease, left 0s, top 0s;
+    }
+    
+    &:hover::before {
+        --size: 200px;
+    }
+}
+.content1{
+    position: relative;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    span {
+        position: relative;
+    }
+        
+    &::before {
+        --size: 0;
+        content: '';
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        width: var(--size);
+        height: var(--size);
+        background: radial-gradient(circle closest-side, #0A84FF, transparent);
+        transform: translate(-50%, -50%);
+        transition: all .2s ease, left 0s, top 0s;
+    }
+    
+    &:hover::before {
+        --size: 200px;
+    }
+}
+.content2{
+    position: relative;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    span {
+        position: relative;
+    }
+        
+    &::before {
+        --size: 0;
+        content: '';
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        width: var(--size);
+        height: var(--size);
+        background: radial-gradient(circle closest-side, #0A84FF, transparent);
+        transform: translate(-50%, -50%);
+        transition: all .2s ease, left 0s, top 0s;
+    }
+    
+    &:hover::before {
+        --size: 200px;
+    }
+}
+
+/* https://wsss.tistory.com/1714 마우스 호버 코드를 응용하여 사용함 */

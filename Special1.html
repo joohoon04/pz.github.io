@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpecialDay</title>
+    <link rel="stylesheet" href="Special.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="./img/logo.png"></div></a>
+        <nav>
+            <ul class="nav">
+                <li><a href="Growth_2.html">Growth</a></li>
+                <li><a href="Food1.html">Food </a></li>
+                <li><a href="Interest.html">Interest</a></li>
+                <li><a href="Travel.html">Travel</a></li>
+                <li><a href="Hobby.html">Hobby</a></li>
+                <li><a href="People.html">School</a></li>
+                <li><a href="Affected.html">Affected</a></li>
+                <li><a href="Special1.html">Special Day</a></li>
+                <li><a href="Future.html">Future Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main_text">
+        <img src="./img/Special_icon.png" alt="icon">
+        <p class="text">
+            재미있는 추억을 볼 수 있는 페이지입니다.
+        </p>
+    </div>
+
+    <div class="calendar">
+        <div class="month">
+            <button id="prev-month" class="nav-button">◀</button>
+            <h2 id="month-year"></h2>
+            <button id="next-month" class="nav-button">▶</button>
+        </div>
+        <div class="weekdays">
+          <div class="s">일</div>
+          <div>월</div>
+          <div>화</div>
+          <div>수</div>
+          <div>목</div>
+          <div>금</div>
+          <div class="s">토</div>
+        </div>
+        <div class="days"></div>
+
+        <div class="today-button-container">
+            <button id="today-button" class="today-button">오늘로 돌아가기</button>
+        </div>
+
+        <div id="popup" class="popup hidden">
+            <div class="popup-content">
+              <span class="close-button" id="close-popup">&times;</span>
+              <img src="https://via.placeholder.com/300x200" alt="팝업 이미지" class="popup-image">
+              <h2 id="popup-title">선택한 날짜</h2>
+              <p id="popup-description"></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_text">
+            <ul>
+                <li><a href="mailto:jju31142@gmail.com">E-mail : jju31142@gmail.com</a></li>
+                <li>Instagram : <a href="https://www.instagram.com/">hoon.04o</a></li>
+                <li><a href="https://alluring-cheek-cac.notion.site/844a1dff26fd4c778fa06929e17af73d?pvs=4"> portfolio : JOOJAEHOON</a></li>
+            </ul>
+            <div class="esc"> 
+                KAYWON UNIVERSITY DIGITAL MEDIA DESIGN JOOJAEHOON
+                copyrtghtⓒJOOJAEHOON All RIGHT RESERVED
+            </div>
+        </div>
+    </footer>
+
+    <script src="Special.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People</title>
+    <link rel="stylesheet" href="People.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="./img/logo.png"></div></a>
+        <nav>
+            <ul class="nav">
+                <li><a href="Growth_2.html">Growth</a></li>
+                <li><a href="Food1.html">Food </a></li>
+                <li><a href="Interest.html">Interest</a></li>
+                <li><a href="Travel.html">Travel</a></li>
+                <li><a href="Hobby.html">Hobby</a></li>
+                <li><a href="People.html">School</a></li>
+                <li><a href="Affected.html">Affected</a></li>
+                <li><a href="Special1.html">Special Day</a></li>
+                <li><a href="Future.html">Future Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div id="wrap">
+            <div id="container">
+                <div class="box frot" onclick="showPopup('./img/frot.png', '학교에서 야작을 하면 볼 수 있는 저녁 노을 하늘', 'popup_frot')"></div>
+                <div class="box back" onclick="showPopup('./img/back.png', '지금 학교 생활에 도움이 되는 라면 자판기가 생겼을 때 신기해서 사진을 찍었습니다.', 'popup_back')"></div>
+                <div class="box top" onclick="showPopup('./img/top.png', '1학년 때 첫 연합tp 하는 것을 촬영한 사진입니다.', 'popup_top')"></div>
+                <div class="box bottom" onclick="showPopup('./img/bouttom.png', '연합tp가 끝나고 동기들과 종강기념 파티에서 술을 먹을 때 제가 졿아하는 음식이 나와서 찍은 사진입니다.', 'popup_bottom')"></div>
+                <div class="box left" onclick="showPopup('./img/left.png', '동기들과 겨울쯤 학교를 산책하다가 눈이 하트 모양으로 생겨서 같이 찍은 사진입니다.', 'popup_left')"></div>
+                <div class="box right" onclick="showPopup('./img/right.png', '학교에서 야작을 하면 볼 수 있는 아침 해가 뜨는 것을 볼 수 있어요', 'popup_right')"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup_wrap" id="popup" style="display: none;">
+        <div class="popup_inner">
+            <img src="" alt="" id="popupImage">
+            <p id="popupDescription"></p>
+            <button class="btn_close" onclick="closePopup()">닫기</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_text">
+            <ul>
+                <li><a href="mailto:jju31142@gmail.com">E-mail : jju31142@gmail.com</a></li>
+                <li>Instagram : <a href="https://www.instagram.com/">hoon.04o</a></li>
+                <li>계원예술대학교 : 22361106</li>
+            </ul>
+            <div class="esc"> 
+                KAYWON UNIVERSITY DIGITAL MEDIA DESIGN JOOJAEHOON
+                copyrtghtⓒJOOJAEHOON All RIGHT RESERVED
+            </div>
+        </div>
+    </footer>
+
+    <script src="People.js"></script>
+</body>
+</html>

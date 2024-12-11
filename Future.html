@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future</title>
+    <link rel="stylesheet" href="Future.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="./img/logo.png"></div></a>
+        <nav>
+            <ul class="nav">
+                <li><a href="Growth_2.html">Growth</a></li>
+                <li><a href="Food1.html">Food </a></li>
+                <li><a href="Interest.html">Interest</a></li>
+                <li><a href="Travel.html">Travel</a></li>
+                <li><a href="Hobby.html">Hobby</a></li>
+                <li><a href="People.html">School</a></li>
+                <li><a href="Affected.html">Affected</a></li>
+                <li><a href="Special1.html">Special Day</a></li>
+                <li><a href="Future.html">Future Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main_text">
+        <img src="./img/Future_icon.png" alt="icon">
+        <p class="text">
+            저는 앞으로 인생 계획은...!
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <span onclick="showPopup('./img/graduate.png', '저는 졸업 후 포폴을 준비하여 취업을 하려고 합니다.', 'popup_white')" style="--i:1;">
+                <img src="./img/graduate.png" alt="">
+                <!-- 졸업 후 무엇을 할 건지 -->
+                <p class="overlay">졸업 후 </p>
+            </span>
+            <span onclick="showPopup('./img/10.png', '10년 후 저는 취업을 상태로 살고 있었으면 좋겠습니다. 평범하게 하고 싶은 일을 찾아서 일을 하고 좋아하는 것들을 많이 할 수 있는 사람이 되어있으면 좋을 것 같습니다.', 'popup_10')" style="--i:2;">
+                <img src="./img/10.png" alt="">
+                <!-- 10년 후 무엇을 하고 싶은지-->
+                <p class="overlay">10년 후</p>
+            </span>
+            <span onclick="showPopup('./img/target.png', '저의 목표는 하루 3끼 먹는 것입니다. 제가 좋아하는 반찬과 음식들을 행복하게 먹는 것입니다.', 'popup_target')" style="--i:3;">
+                <img src="./img/target.png" alt="">
+                <!-- 앞으로에 목표가 무엇인지 -->
+                <p class="overlay">목표</p>
+            </span>
+            <span onclick="showPopup('./img/drama2.png', '저의 꿈은 하루 동안 편하게 잠을 자고 아무 걱정 없이 평화로운 삶을 사는 것입니다.', 'popup_drama2')" style="--i:4;">
+                <img src="./img/drama2.png" alt="">
+                <p class="overlay">꿈</p>
+                <!-- 꿈은 무엇인지 -->
+            </span>
+        </div>
+    </div>
+
+    <div class="popup_wrap" id="popup" style="display: none;">
+        <div class="popup_inner">
+            <img src="" alt="" id="popupImage">
+            <p id="popupDescription"></p>
+            <button class="btn_close" onclick="closePopup()">닫기</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_text">
+            <ul>
+                <li><a href="mailto:jju31142@gmail.com">E-mail : jju31142@gmail.com</a></li>
+                <li>Instagram : <a href="https://www.instagram.com/">hoon.04o</a></li>
+                <li>계원예술대학교 : 22361106</li>
+            </ul>
+            <div class="esc"> 
+                KAYWON UNIVERSITY DIGITAL MEDIA DESIGN JOOJAEHOON
+                copyrtghtⓒJOOJAEHOON All RIGHT RESERVED
+            </div>
+        </div>
+    </footer>
+
+    <script src="Future.js"></script>
+</body>
+</html>

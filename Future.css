@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #1d1d1d;
+}
+/* header 부분 */
+a{
+    text-decoration-line: none;
+    color: #fff;
+}
+/* header 부분 */
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh * 150/ 1920);
+}
+.logo img{
+    width: calc(100vh * 100 / 1920);
+    border-radius: 50%;
+}
+.nav{
+    list-style: none;
+}
+.nav li{
+    display: inline-block;
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+.nav li:hover{
+    background-color: #0A84FF;
+    border-radius: 50%;
+}
+/* header 끝 */
+
+/* main_text css */
+.main_text{
+    margin-top: calc(100vh * 30 / 1920);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.text{
+    font-size: calc(100vh * 50/1920);
+    font-weight: 400;
+} 
+.main_text img{
+    width: calc(100vh * 150/1920);
+}
+
+/* container css */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vh* 3413 / 1920);
+    height: calc(100vh* 0.8);
+}
+.box{
+    position: relative;
+    top: 23px;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+.box.paused {
+    animation-play-state: paused;
+}
+@keyframes animate{
+    
+    0%{
+        transform: perspective(1600px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1600px) rotateY(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg))translateZ(400px);
+}
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    -webkit-box-reflect:below 2px linear-gradient(transparent,transparent,#0004);
+}
+img{
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+span:hover .overlay {
+    opacity: 1;
+    color: #fff;
+}
+
+/* popup css */
+.popup_wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup_inner{
+    background: #fff;
+    border-radius: calc(100vh * 20 / 1920);
+    padding: calc(100vh * 80 / 1920);
+    width: calc(100vh * 900 / 1920);
+    text-align: center;
+}
+/* 팝업창마다 색상 변경 */
+.popup_white .popup_inner{
+    background-color: #fff;
+    color: #000;
+}
+.popup_10 .popup_inner{
+    background-color: #fff;
+    color: #000;
+}
+.popup_target .popup_inner{
+    background-color: #fff;
+    color: #000;
+}
+.popup_drama2 .popup_inner{
+    background-color: #fff;
+    color: #000;
+}
+.popup_inner img{
+    max-width: 100%;
+    height: auto;
+}
+.btn_close{
+    margin-top: calc(100vh * 10 / 1920);
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn_close:hover{
+    background-color: #0A84FF;
+}
+#popupDescription{
+    font-size: calc(100vh * 35 / 1920);
+    text-align: start;
+}
+
+/* footer css */
+footer{
+    height: calc(100vh * 180 / 1920);
+    margin-top: calc(100vh * 100 / 1920);
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.footer_text{
+    margin-top: calc(100vh * 30 / 1920);
+}
+.footer_text ul{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+.footer_text li:nth-child(2){
+    margin-left: calc(100vh * 50 / 1920);
+}
+.text{
+    margin-top: calc(100vh * 10 / 1920);
+}
+.footer_text a{
+    text-decoration-line: none;
+    color: #000;
+}

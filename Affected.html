@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affected</title>
+    <link rel="stylesheet" href="Affected1.css">
+    <link rel="stylesheet" href="content.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="./img/logo.png"></div></a>
+        <nav>
+            <ul class="nav">
+                <li><a href="Growth_2.html">Growth</a></li>
+                <li><a href="Food1.html">Food </a></li>
+                <li><a href="Interest.html">Interest</a></li>
+                <li><a href="Travel.html">Travel</a></li>
+                <li><a href="Hobby.html">Hobby</a></li>
+                <li><a href="People.html">School</a></li>
+                <li><a href="Affected.html">Affected</a></li>
+                <li><a href="Special1.html">Special Day</a></li>
+                <li><a href="Future.html">Future Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main_text">
+        <img src="./img/Affected.png" alt="">
+        <p class="text">
+            저의 인생에 영향을 받은 책이나 영화를 소개 하는 페이지
+        </p>
+    </div>
+
+    <div class="main">
+        <div class="box_1"onclick="showPopup('./img/drama.svg', '멜로가 체질에서 여주인공들이 한 집에서 살다가 친구들의 중요함을 드라마를 보면서 느꼈고, 로맨스 부분이지만 감동적인 부분이 많아서 정말 재미있었습니다.', 'popup_pink')">
+            <div class="content">
+                <img src="./img/drama.svg" alt="">
+            </div>
+        </div>
+        <div class="box_2"onclick="showPopup('./img/book.svg', '아몬드 감정표현불능증이 있는 주인공이 곤이를 만나고 점점 감정이 표현이 가능해져 가는 것을 보고 공감을 하는것이 인간관계에 중요함을 깨달았습니다.', 'popup_almond')">
+            <div class="content1">
+                <img src="./img/book.svg" alt="">
+            </div>
+        </div>
+        <div class="box_3" onclick="showPopup('./img/movie.svg', '크루엘라에는 자신의 본심을 속이고 있던 자신이 크루엘라라는 자아를 받아드리고 삶을 생활하는 것이 제일 멋있다고 생각되어서 좋았습니다.', 'popup_black')">
+            <div class="content2">
+                <img src="./img/movie.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="popup_wrap" id="popup" style="display: none;">
+        <div class="popup_inner">
+            <img src="" alt="" id="popupImage">
+            <p id="popupDescription"></p>
+            <button class="btn_close" onclick="closePopup()">닫기</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_text">
+            <ul>
+                <li><a href="mailto:jju31142@gmail.com">E-mail : jju31142@gmail.com</a></li>
+                <li>Instagram : <a href="https://www.instagram.com/">hoon.04o</a></li>
+                <li>계원예술대학교 : 22361106</li>
+            </ul>
+            <div class="esc"> 
+                KAYWON UNIVERSITY DIGITAL MEDIA DESIGN JOOJAEHOON
+                copyrtghtⓒJOOJAEHOON All RIGHT RESERVED
+            </div>
+        </div>
+    </footer>
+
+    <script src="Affected.js"></script>
+</body>
+</html>

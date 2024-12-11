@@ -1,0 +1,229 @@
+/* 전체적인 css */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #1d1d1d
+}
+a{
+    text-decoration-line: none;
+    color: #fff;
+}
+/* 전체적인 css */
+
+/* header 부분 */
+header{
+    /*background-color: #c0c0c0;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh * 150/ 1920);
+}
+.logo img{
+    width: calc(100vh * 100 / 1920);
+    border-radius: 50%;
+}
+.nav{
+    list-style: none;
+}
+.nav li{
+    display: inline-block;
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+
+.nav li:hover{
+    background-color: #0A84FF;
+    border-radius: 50%;
+}
+/* header 끝 */
+
+/* main 부분 */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920); */
+}
+.main div{
+    margin-top: calc(100vh * 50 / 1920);
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+
+
+.main_p{
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+    height: calc(100vh * 300 / 1920);
+    text-align: center;
+    color: #fff;
+}
+
+.main1p,
+.main2p {
+    margin-top: calc(100vh * 50 / 1920);
+    font-size: calc(100vh * 40 / 1920);
+    font-weight: 500;
+    opacity: 0;
+    animation: textmove 1s forwards;
+}
+
+/* 애니메이션 정의 */
+@keyframes textmove {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main2p {
+    animation-delay: 0.5s;
+}
+/* main안에 div box */
+
+.Growth{
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+.Growth img{
+    width: calc(100vh * 850 / 1920);
+}
+.Food{
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+.Food img{
+    width: calc(100vh * 850 / 1920);
+}
+.Interest{
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+.Interest img{
+    width: calc(100vh * 850 / 1920);
+}
+.Travel{
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+.Travel img{
+    width: calc(100vh * 850 / 1920);
+}
+.Hobby{
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+.Hobby img{
+    width: calc(100vh * 850 / 1920);
+}
+.People{
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+.People img{
+    width: calc(100vh * 850 / 1920);
+}
+.Affected{
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+.Affected img{
+    width: calc(100vh * 850 / 1920);
+}
+.Special{
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+.Special img{
+    width: calc(100vh * 850 / 1920);
+}
+.Future{
+    margin-right: calc(100vh * 50 / 1920);
+    margin-left: calc(100vh * 50 / 1920);
+}
+.Future img{
+    width: calc(100vh * 850 / 1920);
+}
+.overlay {
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0, 0.5);
+    /* opacity: 0; */
+    transition: opacity 0.2s;
+    opacity: 1;
+    color: #fff;
+}
+
+.Growth ,
+.Food ,
+.Interest ,
+.Travel ,
+.Hobby ,
+.People ,
+.Affected ,
+.Special ,
+.Future  {
+    max-width: 75%;
+    transition: transform .3s linear, filter .3s ease;
+}
+.Growth:hover,
+.Food:hover,
+.Interest:hover,
+.Travel:hover,
+.Hobby:hover,
+.People:hover,
+.Affected:hover,
+.Special:hover,
+.Future:hover {
+    transform: scale(1.1);
+}
+.blurred {
+    filter: blur(5px);
+    transform: scale(0.95);
+}
+
+/* main 끝 */
+
+/* footer css */
+footer{
+    height: calc(100vh * 180 / 1920);
+    margin-top: calc(100vh * 100 / 1920);
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.footer_text{
+    margin-top: calc(100vh * 30 / 1920);
+}
+.footer_text ul{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+.footer_text li:nth-child(2){
+    margin-left: calc(100vh * 50 / 1920);
+}
+.text{
+    margin-top: calc(100vh * 10 / 1920);
+}
+.footer_text a{
+    text-decoration-line: none;
+    color: #000;
+}

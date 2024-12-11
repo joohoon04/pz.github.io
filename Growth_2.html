@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜</title>
+    <link rel="stylesheet" href="Growth.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="./img/logo.png"></div></a>
+        <nav>
+            <ul class="nav">
+                <li><a href="Growth_2.html">Growth</a></li>
+                <li><a href="Food1.html">Food </a></li>
+                <li><a href="Interest.html">Interest</a></li>
+                <li><a href="Travel.html">Travel</a></li>
+                <li><a href="Hobby.html">Hobby</a></li>
+                <li><a href="People.html">School</a></li>
+                <li><a href="Affected.html">Affected</a></li>
+                <li><a href="Special1.html">Special Day</a></li>
+                <li><a href="Future.html">Future Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul class="main">
+        <li class="click">
+            <div class="btn_open">
+                <div id="pop_info_1" class="pop_wrap" onclick="showPopup('./img/me.png', '제가 세상 밖으로 나왔습니다', 'popup_music')">
+                    <div class="pop_inner">
+                        <p class="dsc">2004</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="click">
+            <div class="btn_open">
+                <div id="pop_info_2" class="pop_wrap" onclick="showPopup('./img/Growth2.png', '2017년에는 집과 가까운 초등학교를 들어가서 다양한 활동을 하였습니다.', 'popup_music')">
+                    <div class="pop_inner">
+                        <p class="dsc">2017</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="click">
+            <div class="btn_open">
+                <div id="pop_info_3" class="pop_wrap" onclick="showPopup('./img/Growth6.png', '2018년에는 중학생 때 저희 강아지 한 마리가 찾아왔습니다.', 'popup_music')">
+                    <div class="pop_inner">
+                        <p class="dsc">2018</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="click">
+            <div class="btn_open">
+                <div id="pop_info_4" class="pop_wrap" onclick="showPopup('./img/Growth4.png', '2020년에는 처음 입시학원에 가서 미술이라는 것을 해봤습니다.', 'popup_music')">
+                    <div class="pop_inner">
+                        <p class="dsc">2020</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="click">
+            <div class="btn_open">
+                <div id="pop_info_5" class="pop_wrap" onclick="showPopup('./img/Growth5.png', '2023년에는 계원예술대학교에 입학하여 재미있게 놀고, 20살이 되어서 가장 재미있었습니다.', 'popup_music')">
+                    <div class="pop_inner">
+                        <p class="dsc">2023</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="click">
+            <div class="btn_open">
+                <div id="pop_info_6" class="pop_wrap" onclick="showPopup('./img/Growth6.png', '2025년에는 저는 저희 집 막내가 죽을 때까지 행복한 추억을 만들면서 살고 싶습니다.', 'popup_music')">
+                    <div class="pop_inner">
+                        <p class="dsc">2024</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="popup_wrap" id="popup" style="display: none;">
+        <div class="popup_inner">
+            <img src="" alt="" id="popupImage">
+            <p id="popupDescription"></p>
+            <button class="btn_close" onclick="closePopup()">닫기</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_text">
+            <ul>
+                <li><a href="mailto:jju31142@gmail.com">E-mail : jju31142@gmail.com</a></li>
+                <li>Instagram : <a href="https://www.instagram.com/">hoon.04o</a></li>
+                <li>계원예술대학교 : 22361106</li>
+            </ul>
+            <div class="esc"> 
+                KAYWON UNIVERSITY DIGITAL MEDIA DESIGN JOOJAEHOON
+                copyrtghtⓒJOOJAEHOON All RIGHT RESERVED
+            </div>
+        </div>
+    </footer>
+    <script src="Growth.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+    <link rel="stylesheet" href="Hobby.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="./img/logo.png"></div></a>
+        <nav>
+            <ul class="nav">
+                <li><a href="Growth_2.html">Growth</a></li>
+                <li><a href="Food1.html">Food </a></li>
+                <li><a href="Interest.html">Interest</a></li>
+                <li><a href="Travel.html">Travel</a></li>
+                <li><a href="Hobby.html">Hobby</a></li>
+                <li><a href="People.html">School</a></li>
+                <li><a href="Affected.html">Affected</a></li>
+                <li><a href="Special1.html">Special Day</a></li>
+                <li><a href="Future.html">Future Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main_text">
+        <img src="./img/Hobby.png" alt="취미">
+        <p class="text">
+            저의 취미에 대한 페이지입니다.
+        </p>
+    </div>
+    <div class="container">
+        <div id="wrap">
+            <ul class="wrap_ul">
+                <li class="flip-wrap" onclick="showPopup('./img/music.png', '저는 음악을 좋아하는데 그중 밴드 음악을 좋아합니다', 'popup_music')">
+                    <div class="flip">
+                        <div class="front">Music</div>
+                        <div class="back"><img src="./img/music.png"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="wrap0">
+            <ul class="wrap_ul">
+                <li class="flip-wrap" onclick="showPopup('./img/webtoon.png', '웹툰을 좋아 하는데 완결이 났지만 마음에 남은 마루는 강쥐를 좋아합니다', 'popup_webbtoon')">
+                    <div class="flip">    
+                        <div class="front">Webtoon</div>
+                        <div class="back"><img src="./img/webtoon.png"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="wrap1">
+            <ul class="wrap_ul">
+                <li class="flip-wrap" onclick="showPopup('./img/walk.jpg', '산책를 좋아하는 강아지와 함께하거나 혼자서 산책하는 것도 좋아합니다!', 'popup_walk')">
+                    <div class="flip">    
+                        <div class="front">walk</div>
+                        <div class="back"><img src="./img/walk.jpg"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="popup_wrap" id="popup" style="display: none;">
+        <div class="popup_inner">
+            <img src="" alt="" id="popupImage">
+            <p id="popupDescription"></p>
+            <button class="btn_close" onclick="closePopup()">닫기</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <p class="modal-description" id="modalDescription"></p>
+    </div>
+    
+    <footer>
+        <div class="footer_text">
+            <ul>
+                <li><a href="mailto:jju31142@gmail.com">E-mail : jju31142@gmail.com</a></li>
+                <li>Instagram : <a href="https://www.instagram.com/">hoon.04o</a></li>
+                <li>계원예술대학교 : 22361106</li>
+            </ul>
+            <div class="esc"> 
+                KAYWON UNIVERSITY DIGITAL MEDIA DESIGN JOOJAEHOON
+                copyrtghtⓒJOOJAEHOON All RIGHT RESERVED
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="Hobby.js"></script>
+</body>
+</html>
